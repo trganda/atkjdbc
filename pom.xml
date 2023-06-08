@@ -13,13 +13,15 @@
         <module>db2</module>
         <module>modeshape</module>
         <module>derby</module>
-        <module>druid</module>
+        <module>fabric</module>
+        <module>sqlite</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <netty.version>4.1.86.Final</netty.version>
     </properties>
 
     <dependencies>
@@ -28,6 +30,18 @@
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-codec</artifactId>
+            <version>${netty.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-handler</artifactId>
+            <version>${netty.version}</version>
         </dependency>
 
         <dependency>

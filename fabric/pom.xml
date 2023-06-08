@@ -9,7 +9,7 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>druid</artifactId>
+    <artifactId>fabric</artifactId>
 
     <dependencies>
         <dependency>
