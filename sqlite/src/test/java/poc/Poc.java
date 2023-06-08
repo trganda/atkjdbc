@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import server.Server;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -22,7 +21,7 @@ public class Poc {
                      String.format("jdbc:sqlite:%s", "src/main/resources/poc.db"));) {
             conn.setAutoCommit(true);
             Statement statement = conn.createStatement();
-            statement.execute(String.format("CREATE VIEW poc AS SELECT load_extension('%s');", path));
+            statement.execute(String.format("CREATE VIEW POC AS SELECT load_extension('%s', 'poc');", path));
             statement.close();
         } catch (SQLException e) {
             // ttk...
@@ -77,7 +76,7 @@ public class Poc {
         connection.setAutoCommit(true);
 
         Statement statement = connection.createStatement();
-        statement.execute("SELECT * FROM poc");
+        statement.execute("SELECT * FROM POC");
 
         statement.close();
         connection.close();
