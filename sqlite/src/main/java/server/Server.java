@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.InetSocketAddress;
 
 public class Server implements AutoCloseable {
@@ -39,13 +40,22 @@ public class Server implements AutoCloseable {
             byte[] bytes = new byte[is.available()];
             is.read(bytes);
 
-            resp.getResponseBody().write(bytes);
-            resp.close();
+            resp.getResponseHeaders().add("Content-Type:", "application/octet-stream");
+            resp.sendResponseHeaders(200, bytes.length);
+
+            OutputStream out = resp.getResponseBody();
+            out.write(bytes);
+            out.flush();
+            out.close();
         }
     }
 
     @Override
     public void close() {
         this.httpServer.stop(500);
+    }
+
+    public static void main(String[] args) throws IOException {
+        new Server(8001);
     }
 }
