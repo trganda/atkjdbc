@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import server.Server;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -16,6 +17,11 @@ import java.sql.Statement;
 public class Poc {
 
     public static void createDb(String path) {
+        File dbFile = new File("src/main/resources/poc.db");
+        if (dbFile.exists()) {
+            dbFile.delete();
+        }
+
         try (Connection conn =
                  DriverManager.getConnection(
                      String.format("jdbc:sqlite:%s", "src/main/resources/poc.db"));) {
@@ -50,6 +56,7 @@ public class Poc {
         createDb("src/main/resources/poc.dylib");
     }
 
+    // Only tested on ubuntu x86_64
     @Test
     public void sqlite() throws SQLException, MalformedURLException {
 

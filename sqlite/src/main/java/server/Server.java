@@ -52,7 +52,7 @@ public class Server implements AutoCloseable {
 
     @Override
     public void close() {
-        this.httpServer.stop(500);
+        this.httpServer.stop(0);
     }
 
     public static void main(String[] args) throws IOException {
