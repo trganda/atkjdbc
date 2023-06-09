@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Server implements AutoCloseable {
 
@@ -41,6 +43,12 @@ public class Server implements AutoCloseable {
             is.read(bytes);
 
             resp.getResponseHeaders().add("Content-Type:", "application/octet-stream");
+
+            SimpleDateFormat dateFormat = new SimpleDateFormat();
+            dateFormat.applyPattern("EEE, dd MMM yyyy HH:mm:ss zzz");
+            Date date = new Date();
+            resp.getResponseHeaders().add("Last-Modified:", dateFormat.format(date));
+
             resp.sendResponseHeaders(200, bytes.length);
 
             OutputStream out = resp.getResponseBody();
