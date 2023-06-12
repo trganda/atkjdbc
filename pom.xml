@@ -15,6 +15,7 @@
         <module>derby</module>
         <module>fabric</module>
         <module>sqlite</module>
+        <module>postgresql</module>
     </modules>
 
     <properties>
