@@ -9,14 +9,14 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>db2</artifactId>
+    <artifactId>treadata</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.ibm.db2/jcc -->
+        <!-- https://mvnrepository.com/artifact/com.teradata.jdbc/terajdbc -->
         <dependency>
-            <groupId>com.ibm.db2</groupId>
-            <artifactId>jcc</artifactId>
-            <version>11.1.4.4</version>
+            <groupId>com.teradata.jdbc</groupId>
+            <artifactId>terajdbc</artifactId>
+            <version>20.00.00.10</version>
         </dependency>
     </dependencies>
 

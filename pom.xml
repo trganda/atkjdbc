@@ -16,6 +16,11 @@
         <module>fabric</module>
         <module>sqlite</module>
         <module>postgresql</module>
+        <module>avatica</module>
+        <module>informix</module>
+        <module>mysql</module>
+        <module>snowflake</module>
+        <module>treadata</module>
     </modules>
 
     <properties>

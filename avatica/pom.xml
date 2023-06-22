@@ -9,14 +9,14 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>db2</artifactId>
+    <artifactId>avatica</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.ibm.db2/jcc -->
+        <!-- https://mvnrepository.com/artifact/org.apache.calcite.avatica/avatica-core -->
         <dependency>
-            <groupId>com.ibm.db2</groupId>
-            <artifactId>jcc</artifactId>
-            <version>11.1.4.4</version>
+            <groupId>org.apache.calcite.avatica</groupId>
+            <artifactId>avatica-core</artifactId>
+            <version>1.21.0</version>
         </dependency>
     </dependencies>
 

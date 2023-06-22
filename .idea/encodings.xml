@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/avatica/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/avatica/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/db2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/db2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/derby/src/main/java" charset="UTF-8" />
@@ -9,13 +11,21 @@
     <file url="file://$PROJECT_DIR$/fabric/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/h2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/h2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/informix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/informix/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modeshape/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/modeshape/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mysql/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/postgresql/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/postgresql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/snowflake/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/snowflake/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sqlite/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sqlite/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/treadata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/treadata/src/main/resources" charset="UTF-8" />
   </component>
 </project>

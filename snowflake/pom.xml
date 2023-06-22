@@ -9,14 +9,20 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>db2</artifactId>
+    <artifactId>snowflake</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.ibm.db2/jcc -->
         <dependency>
-            <groupId>com.ibm.db2</groupId>
-            <artifactId>jcc</artifactId>
-            <version>11.1.4.4</version>
+            <groupId>net.snowflake</groupId>
+            <artifactId>snowflake-jdbc</artifactId>
+            <version>3.13.28</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna -->
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.13.0</version>
         </dependency>
     </dependencies>
 

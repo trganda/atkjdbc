@@ -9,15 +9,13 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>db2</artifactId>
+    <artifactId>mysql</artifactId>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.ibm.db2/jcc -->
         <dependency>
-            <groupId>com.ibm.db2</groupId>
-            <artifactId>jcc</artifactId>
-            <version>11.1.4.4</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.19</version>
         </dependency>
     </dependencies>
-
 </project>
