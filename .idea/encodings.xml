@@ -25,7 +25,7 @@
     <file url="file://$PROJECT_DIR$/sqlite/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/treadata/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/treadata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teradata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teradata/src/main/resources" charset="UTF-8" />
   </component>
 </project>

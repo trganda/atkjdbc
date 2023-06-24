@@ -9,7 +9,7 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>treadata</artifactId>
+    <artifactId>teradata</artifactId>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/com.teradata.jdbc/terajdbc -->
@@ -18,6 +18,7 @@
             <artifactId>terajdbc</artifactId>
             <version>20.00.00.10</version>
         </dependency>
+
     </dependencies>
 
 </project>
